@@ -13,6 +13,14 @@ class Saetta < Formula
     bin.install "bin/saetta"
   end
 
+  def caveats
+    <<~EOS
+      One copy of saetta is enough: if you installed it before with the curl installer,
+      remove that one (rm ~/.local/bin/saetta), or it runs instead of this one.
+      Upgrade with: brew upgrade saetta (saetta update is for the curl install).
+    EOS
+  end
+
   test do
     assert_match "saetta #{version}", shell_output("#{bin}/saetta version")
   end
