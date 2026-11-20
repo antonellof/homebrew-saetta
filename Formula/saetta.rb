@@ -1,9 +1,9 @@
 class Saetta < Formula
-  desc "LLM inference engine for Qwen3.8-Flash-Next on Apple Silicon (M5 Max)"
+  desc "LLM inference engine for Qwen3.8-Flash-Next and Qwen3.8-27B on Apple Silicon (M5 Max)"
   homepage "https://github.com/antonellof/saetta"
-  url "https://github.com/antonellof/saetta/releases/download/v0.7.2/saetta-macos-arm64.tar.gz"
-  sha256 "e1fca274078481a11ddda5729fd1b48bae9846638eb783d63b4c48e75ae274d8"
-  version "0.7.2"
+  url "https://github.com/antonellof/saetta/releases/download/v0.8.0/saetta-macos-arm64.tar.gz"
+  sha256 "bcf9db8c9e2ec103c4a881aaa0dc0b4934a992b49833a9eb26c1ce0ed8d87776"
+  version "0.8.0"
   license "MIT"
 
   depends_on arch: :arm64
